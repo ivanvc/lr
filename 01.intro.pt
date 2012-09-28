@@ -1,0 +1,171 @@
+% red
+= Learn Ruby
+% 0
+- (En espanol)
+
+* Lenguajes de programacion
++ Que son?
++ Para que sirven?
+
+* Clasificacion de los lenguajes
++ Lenguajes bajo nivel
+++ Ensamblador, C
++ Lenguajes alto nivel
+++ Java, C#
++ Lenguajes tipados
+++ Java, C, C#, Objective C
++ Lenguajes atipados
+++ Ruby, Python, Javascript
+
+= irb
+- [i]nteractive [r]u[b]y
+
+* Strings
+% blue
+< "Guadalupe la frutera"
+< 'Fruti' + "Lupi"
+% 0
+
+* Numbers
+% blue
+< 1
+< 2
+< 3
+< 4 + 1
+< 5 * 2
+< 6 / 3
+< 7 - 1
+< 9 ** 2
+% 0
++ * Orden de los operadores
+
+* Booleans
+% blue
+< true
+< false
+< true && false
+< true || false
+< true && true || false
+< ! true
+% 0
+< * Orden de los operadores
+
+* El fabuloso mundo de las
+# variables
+
++ Empiezan con una letra minuscula
++ Asignacion
+% blue
+> fruti = "lupi"
+% 0
+++ guadalupe = 'la frutera'
++ Reasignacion
+% blue
+< fruti = "lupi" + 's'
+% 0
++ Utilizarlas
+% blue
+< fruti + guadalupe
+< fruti.reverse
+< fruti.index 'u'
+% 0
+
+* Y las
+# Constantes
+
++ Empiezan con una mayuscula
++ Asignacion Unica
+% blue
+< DireccionDeOoyala = "Av. Americas 1600"
+% 0
++ Utilizarlas
+% blue
+< DireccionDeOoyala.size
+% 0
++ Por lo general las constantes del sistema son puras mayusculas: RUBY_VERSION
+
+# arreglos = []
+
++ Los arreglos son listas ordenadas que contienen cualquier objeto
+% blue
+< compis = [fruti, guadalupe, 'Jesus Alejandro', 6]
+% 0
++ Se pueden obtener sus valores pasando su posicion
+% blue
+< compis[2]
+< compis[-1]
+< compis[0]
+% 0
++ El primer elemento siempre tiene el indice 0!!
+
+# .metodos
+
++ Un metodo es un fragmento de codigo que se puede ejecutar varias veces
++ Se mandan a llamar con un punto despues del nombre de la variable
+% blue
+< fruti.size
+% 0
++ Por lo general sus argumentos se encierran entre parentesis
+% blue
+< fruti.index('p')
+% 0
++ Si recibe mas de un argumento, se separan con comas
+% blue
+< fruti.insert(0, ' ')
+% 0
++ Algunos metodos son globales en Ruby, y no necesitan aplicarse a una variable
+% blue
+< puts fruti
+% 0
++ Se definen de la siguiente forma
+% blue
+< def quien_es(nombre)
+< # Aqui hacemos algo
+< end
+% 0
+
+# Comparaciones
+
++ Se puede comparar usando un if
+% blue
+< def quien_es(nombre)
+<   if nombre == "Jesus Alejando"
+<     "Pues el buen Jesus"
+<   end
+< end
+< quien_es('Jesus Alejandro')
+< numero = 1
+< puts 'par' if numero / 2 == 0
+% 0
++ O comparar usando unless
+% blue
+< puts "menor de edad" unless edad < 18
+% 0
+
+# Ciclos
+
++ Usando un while
+% blue
+< number = 0
+< while number < 10 { number = number + 2 }
+% 0
++ Usando until
+% blue
+< number = 0
+< until number == 10 { number = number + 2 }
+% 0
++ Each
+% blue
+compis.each { |compi| puts compi }
+% 0
++ Times...
+% blue
+5.times { |number| puts number }
+% 0
+
+. Y eso concluye nuestra introduccion
+
+= Tarea
+- Definir una funcion que se llame pares
+- Recibe un argumento que se llama numero
+- Imprime todos los numeros del 1 hasta el numero, que son pares

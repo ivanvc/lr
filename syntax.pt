@@ -1,0 +1,20 @@
+= Title. The text follows will be rendered at the center of screen with larger
+  font.
+- Explanation. The text will follow the previous text. The text is right
+  alignment.
+* Header. The text will appear at the top of the page with bold style.
++ Bullet. The text will follow the previous text with bullet mark at the
+  beginning. The text is left alignment. Bullets can be nested by doubling or
+  tripling the symbol.
+  You can avoid margin between the line and the previous line by appending `-`
+  symbol, like this `+-`.
+< Left alignment text.
+> Right aligment text.
+% Color. You can change color of texts which appears after the line.
+The color specified by the name of basic colors, such as red, blue, white,
+black, and so on. If the text is `0`, the color is reset.
+, Wait. Wait for your hitting keys if the text is `-`.  Wait for specified
+  interval if the text is a number in sec
+: Execute command. The text will be executed as a internal command.
+# Message. The text will be displayed with large font in the middle.
+. Final message.
