@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>5chan</title>
+  </head>
+  <body>
+    <h1>5chan</h1>
+    <div id="container">
+      <% @assets.each do |asset| %>
+        <div class="asset">
+          <h2><%= asset['name'] %></h2>
+          <img src="<%= asset['preview_image_url'] %>" />
+          <p>
+            <a href="/assets/<%= asset['embed_code'] %>">Ver video</a>
+          </p>
+        </div>
+      <% end %>
+    </div>
+  </body>
+</html>

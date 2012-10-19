@@ -1,0 +1,15 @@
+source :rubygems
+
+gem 'sinatra' # libreria http
+
+# HTTP Server
+gem 'rest-client'
+gem 'json'
+gem 'shotgun'
+
+# ORM: Object Relational Mapping
+gem 'datamapper'
+gem 'dm-sqlite-adapter'
+
+# Authentication
+gem 'sinatra_omniauth'
